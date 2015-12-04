@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context=".PreloaderActivity"
+              tools:showIn="@layout/activity_preloader">
+
+    <com.mapbox.mapboxsdk.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        mapbox:accessToken="pk.eyJ1IjoiYm95dzE2NSIsImEiOiI3NGQyMzA3ZGZlNTczNDYzZGMyZDAwZTY5YTgyYTI2NSJ9.DmxZlFMSwGAh0RRGa2OVUg"
+        mapbox:mapid="boyw165.638dbf05"/>
+
+    <SeekBar
+        android:id="@+id/main_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"/>
+
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+    </ListView>
+
+</LinearLayout>

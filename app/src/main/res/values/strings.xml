@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trek</string>
+    <string name="app_caption">trek</string>
+    <string name="action_settings">Settings</string>
+</resources>
